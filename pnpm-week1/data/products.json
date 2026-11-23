@@ -1,0 +1,12 @@
+[
+  {
+    "name": "コーヒー",
+    "price": 500,
+    "availableSince": "2026-11-01"
+  },
+  {
+    "name": "紅茶",
+    "price": 450,
+    "availableSince": "2026-11-05"
+  }
+]
