@@ -1,12 +1,13 @@
 {
-  "name": "pnpm-week1",
+  "name": "learn-pnpm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/main.mjs",
-    "format": "prettier src/main.mjs data/products.json package.json --write",
-    "format:check": "prettier src/main.mjs data/products.json package.json --check"
+    "deps:demo": "node src/dependency-demo.mjs",
+    "format": "prettier src data/products.json package.json --write",
+    "format:check": "prettier src data/products.json package.json --check"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,8 @@
   "packageManager": "pnpm@12.18.0",
   "type": "module",
   "dependencies": {
-    "dayjs": "^1.11.23"
+    "dayjs": "^1.11.23",
+    "strip-ansi": "7.1.0"
   },
   "devDependencies": {
     "prettier": "3.9.10"

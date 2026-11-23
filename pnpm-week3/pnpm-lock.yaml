@@ -211,12 +211,19 @@ importers:
       dayjs:
         specifier: ^1.11.23
         version: 1.11.23
+      strip-ansi:
+        specifier: 7.1.0
+        version: 7.1.0
     devDependencies:
       prettier:
         specifier: 3.9.10
         version: 3.9.10
 
 packages:
+
+  ansi-regex@6.6.0:
+    resolution: {integrity: sha512-XZ5apbzreCbXSKwPjJstu8R0zOi247w3XYwWxtwBXgpZrCyc1Ka7p9/xY0A9/diMewmHbEKz+FIraWaEWjlN5g==}
+    engines: {node: '>=12'}
 
   dayjs@1.11.23:
     resolution: {integrity: sha512-QDTCU0M0MxR3hQfnlDJfwekQiaanm1ubOD231u73WBckQ/fsamwRLiE2GBz6D3a/xF1NgfiDLJjXBa1hYOYTtQ==}
@@ -226,8 +233,18 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
+  strip-ansi@7.1.0:
+    resolution: {integrity: sha512-iq6eVVI64nQQTRYq2KtEg2d2uU7LElhTJwsH4YzIHZshxlgZms/wIc4VoDQTlG/IvVIrBKG06CrZnp0qv7hkcQ==}
+    engines: {node: '>=12'}
+
 snapshots:
+
+  ansi-regex@6.6.0: {}
 
   dayjs@1.11.23: {}
 
   prettier@3.9.10: {}
+
+  strip-ansi@7.1.0:
+    dependencies:
+      ansi-regex: 6.6.0
