@@ -1,0 +1,29 @@
+{
+  "name": "pnpm-week1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/main.mjs",
+    "format": "prettier src/main.mjs data/products.json package.json --write",
+    "format:check": "prettier src/main.mjs data/products.json package.json --check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.18.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.18.0",
+  "type": "module",
+  "dependencies": {
+    "dayjs": "1.11.13"
+  },
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
+}
