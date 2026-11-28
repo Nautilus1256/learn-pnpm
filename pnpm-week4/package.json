@@ -22,6 +22,7 @@
   "packageManager": "pnpm@12.18.0",
   "type": "module",
   "dependencies": {
+    "ansi-regex": "^6.6.0",
     "dayjs": "^1.11.23",
     "strip-ansi": "7.1.0"
   },
